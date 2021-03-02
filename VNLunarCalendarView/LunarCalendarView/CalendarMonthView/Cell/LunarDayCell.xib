@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LunarDayCell" id="gTV-IL-0wX" customClass="LunarDayCell" customModule="LunarCalendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFQ-YC-msP">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="1dh-7f-Uja"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkT-sp-45q">
+                        <rect key="frame" x="0.0" y="22" width="185" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="dRn-XP-RF1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.98039215686274506" green="0.5725490196078431" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tkT-sp-45q" secondAttribute="trailing" id="Awu-dX-Mfv"/>
+                <constraint firstItem="tkT-sp-45q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bRQ-Vy-q6T"/>
+                <constraint firstItem="ZFQ-YC-msP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fjo-Y8-fWE"/>
+                <constraint firstAttribute="trailing" secondItem="ZFQ-YC-msP" secondAttribute="trailing" id="gMx-YO-iHY"/>
+                <constraint firstItem="ZFQ-YC-msP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hbo-bg-HZC"/>
+                <constraint firstItem="tkT-sp-45q" firstAttribute="top" secondItem="ZFQ-YC-msP" secondAttribute="bottom" id="jlO-WC-ZDW"/>
+            </constraints>
+            <size key="customSize" width="185" height="126"/>
+            <connections>
+                <outlet property="lunarDayLabel" destination="tkT-sp-45q" id="6Xy-ej-7HZ"/>
+                <outlet property="solarDayLabel" destination="ZFQ-YC-msP" id="1Ub-7a-sZM"/>
+            </connections>
+            <point key="canvasLocation" x="235.50724637681162" y="71.651785714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

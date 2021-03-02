@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E989C4225EDD7A200CEC874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C4125EDD7A200CEC874 /* AppDelegate.swift */; };
+		8E989C4425EDD7A200CEC874 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C4325EDD7A200CEC874 /* SceneDelegate.swift */; };
+		8E989C4625EDD7A200CEC874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C4525EDD7A200CEC874 /* ViewController.swift */; };
+		8E989C4925EDD7A200CEC874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E989C4725EDD7A200CEC874 /* Main.storyboard */; };
+		8E989C4B25EDD7A400CEC874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E989C4A25EDD7A400CEC874 /* Assets.xcassets */; };
+		8E989C4E25EDD7A400CEC874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E989C4C25EDD7A400CEC874 /* LaunchScreen.storyboard */; };
+		8E989C5A25EDD7F500CEC874 /* VNLunarCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C5825EDD7F500CEC874 /* VNLunarCalendarView.swift */; };
+		8E989C5B25EDD7F500CEC874 /* VNLunarCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E989C5925EDD7F500CEC874 /* VNLunarCalendarView.xib */; };
+		8E989C6025EDD82700CEC874 /* LunarMonthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E989C5E25EDD82700CEC874 /* LunarMonthView.xib */; };
+		8E989C6125EDD82700CEC874 /* LunarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C5F25EDD82700CEC874 /* LunarMonthView.swift */; };
+		8E989C6625EDD83400CEC874 /* LunarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E989C6425EDD83400CEC874 /* LunarDayCell.xib */; };
+		8E989C6725EDD83400CEC874 /* LunarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C6525EDD83400CEC874 /* LunarDayCell.swift */; };
+		8E989C6C25EDD85200CEC874 /* CanChi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C6B25EDD85200CEC874 /* CanChi.swift */; };
+		8E989C6F25EDD88000CEC874 /* ExtensionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C6E25EDD88000CEC874 /* ExtensionCollectionView.swift */; };
+		8E989C7225EDD89600CEC874 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C7125EDD89600CEC874 /* ExtensionDate.swift */; };
+		8E989C7525EDD8B100CEC874 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C7425EDD8B100CEC874 /* ExtensionView.swift */; };
+		8E989C7825EDD8D600CEC874 /* LunarCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E989C7725EDD8D600CEC874 /* LunarCalendar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E989C3E25EDD7A200CEC874 /* VNLunarCalendarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VNLunarCalendarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E989C4125EDD7A200CEC874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E989C4325EDD7A200CEC874 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E989C4525EDD7A200CEC874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E989C4825EDD7A200CEC874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E989C4A25EDD7A400CEC874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E989C4D25EDD7A400CEC874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E989C4F25EDD7A400CEC874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E989C5825EDD7F500CEC874 /* VNLunarCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNLunarCalendarView.swift; sourceTree = "<group>"; };
+		8E989C5925EDD7F500CEC874 /* VNLunarCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VNLunarCalendarView.xib; sourceTree = "<group>"; };
+		8E989C5E25EDD82700CEC874 /* LunarMonthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunarMonthView.xib; sourceTree = "<group>"; };
+		8E989C5F25EDD82700CEC874 /* LunarMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunarMonthView.swift; sourceTree = "<group>"; };
+		8E989C6425EDD83400CEC874 /* LunarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunarDayCell.xib; sourceTree = "<group>"; };
+		8E989C6525EDD83400CEC874 /* LunarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunarDayCell.swift; sourceTree = "<group>"; };
+		8E989C6B25EDD85200CEC874 /* CanChi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanChi.swift; sourceTree = "<group>"; };
+		8E989C6E25EDD88000CEC874 /* ExtensionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCollectionView.swift; sourceTree = "<group>"; };
+		8E989C7125EDD89600CEC874 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
+		8E989C7425EDD8B100CEC874 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		8E989C7725EDD8D600CEC874 /* LunarCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarCalendar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E989C3B25EDD7A200CEC874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E989C3525EDD7A200CEC874 = {
+			isa = PBXGroup;
+			children = (
+				8E989C4025EDD7A200CEC874 /* VNLunarCalendarView */,
+				8E989C3F25EDD7A200CEC874 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E989C3F25EDD7A200CEC874 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E989C3E25EDD7A200CEC874 /* VNLunarCalendarView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E989C4025EDD7A200CEC874 /* VNLunarCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				8E989C5725EDD7C300CEC874 /* LunarCalendarView */,
+				8E989C4125EDD7A200CEC874 /* AppDelegate.swift */,
+				8E989C4325EDD7A200CEC874 /* SceneDelegate.swift */,
+				8E989C4525EDD7A200CEC874 /* ViewController.swift */,
+				8E989C4725EDD7A200CEC874 /* Main.storyboard */,
+				8E989C4A25EDD7A400CEC874 /* Assets.xcassets */,
+				8E989C4C25EDD7A400CEC874 /* LaunchScreen.storyboard */,
+				8E989C4F25EDD7A400CEC874 /* Info.plist */,
+			);
+			path = VNLunarCalendarView;
+			sourceTree = "<group>";
+		};
+		8E989C5725EDD7C300CEC874 /* LunarCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				8E989C6925EDD84000CEC874 /* Extension */,
+				8E989C5D25EDD80E00CEC874 /* CalendarMonthView */,
+				8E989C5825EDD7F500CEC874 /* VNLunarCalendarView.swift */,
+				8E989C5925EDD7F500CEC874 /* VNLunarCalendarView.xib */,
+			);
+			path = LunarCalendarView;
+			sourceTree = "<group>";
+		};
+		8E989C5D25EDD80E00CEC874 /* CalendarMonthView */ = {
+			isa = PBXGroup;
+			children = (
+				8E989C6325EDD82A00CEC874 /* Cell */,
+				8E989C5F25EDD82700CEC874 /* LunarMonthView.swift */,
+				8E989C5E25EDD82700CEC874 /* LunarMonthView.xib */,
+			);
+			path = CalendarMonthView;
+			sourceTree = "<group>";
+		};
+		8E989C6325EDD82A00CEC874 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E989C6525EDD83400CEC874 /* LunarDayCell.swift */,
+				8E989C6425EDD83400CEC874 /* LunarDayCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8E989C6925EDD84000CEC874 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E989C6B25EDD85200CEC874 /* CanChi.swift */,
+				8E989C6E25EDD88000CEC874 /* ExtensionCollectionView.swift */,
+				8E989C7125EDD89600CEC874 /* ExtensionDate.swift */,
+				8E989C7425EDD8B100CEC874 /* ExtensionView.swift */,
+				8E989C7725EDD8D600CEC874 /* LunarCalendar.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E989C3D25EDD7A200CEC874 /* VNLunarCalendarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E989C5225EDD7A400CEC874 /* Build configuration list for PBXNativeTarget "VNLunarCalendarView" */;
+			buildPhases = (
+				8E989C3A25EDD7A200CEC874 /* Sources */,
+				8E989C3B25EDD7A200CEC874 /* Frameworks */,
+				8E989C3C25EDD7A200CEC874 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VNLunarCalendarView;
+			productName = VNLunarCalendarView;
+			productReference = 8E989C3E25EDD7A200CEC874 /* VNLunarCalendarView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E989C3625EDD7A200CEC874 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8E989C3D25EDD7A200CEC874 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 8E989C3925EDD7A200CEC874 /* Build configuration list for PBXProject "VNLunarCalendarView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E989C3525EDD7A200CEC874;
+			productRefGroup = 8E989C3F25EDD7A200CEC874 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E989C3D25EDD7A200CEC874 /* VNLunarCalendarView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E989C3C25EDD7A200CEC874 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E989C4E25EDD7A400CEC874 /* LaunchScreen.storyboard in Resources */,
+				8E989C6625EDD83400CEC874 /* LunarDayCell.xib in Resources */,
+				8E989C4B25EDD7A400CEC874 /* Assets.xcassets in Resources */,
+				8E989C4925EDD7A200CEC874 /* Main.storyboard in Resources */,
+				8E989C6025EDD82700CEC874 /* LunarMonthView.xib in Resources */,
+				8E989C5B25EDD7F500CEC874 /* VNLunarCalendarView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E989C3A25EDD7A200CEC874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E989C4625EDD7A200CEC874 /* ViewController.swift in Sources */,
+				8E989C4225EDD7A200CEC874 /* AppDelegate.swift in Sources */,
+				8E989C6125EDD82700CEC874 /* LunarMonthView.swift in Sources */,
+				8E989C4425EDD7A200CEC874 /* SceneDelegate.swift in Sources */,
+				8E989C6F25EDD88000CEC874 /* ExtensionCollectionView.swift in Sources */,
+				8E989C5A25EDD7F500CEC874 /* VNLunarCalendarView.swift in Sources */,
+				8E989C7525EDD8B100CEC874 /* ExtensionView.swift in Sources */,
+				8E989C6725EDD83400CEC874 /* LunarDayCell.swift in Sources */,
+				8E989C7225EDD89600CEC874 /* ExtensionDate.swift in Sources */,
+				8E989C7825EDD8D600CEC874 /* LunarCalendar.swift in Sources */,
+				8E989C6C25EDD85200CEC874 /* CanChi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E989C4725EDD7A200CEC874 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E989C4825EDD7A200CEC874 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E989C4C25EDD7A400CEC874 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E989C4D25EDD7A400CEC874 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E989C5025EDD7A400CEC874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E989C5125EDD7A400CEC874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E989C5325EDD7A400CEC874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VNLunarCalendarView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TuanHA.VNLunarCalendarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E989C5425EDD7A400CEC874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VNLunarCalendarView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TuanHA.VNLunarCalendarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E989C3925EDD7A200CEC874 /* Build configuration list for PBXProject "VNLunarCalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E989C5025EDD7A400CEC874 /* Debug */,
+				8E989C5125EDD7A400CEC874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E989C5225EDD7A400CEC874 /* Build configuration list for PBXNativeTarget "VNLunarCalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E989C5325EDD7A400CEC874 /* Debug */,
+				8E989C5425EDD7A400CEC874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E989C3625EDD7A200CEC874 /* Project object */;
+}
