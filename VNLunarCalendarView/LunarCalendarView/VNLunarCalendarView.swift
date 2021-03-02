@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public protocol VNLunarCalendarViewDelegate: class {
-    func dateDidSelect(_ date: SolarAndLunarDate)
+    func dateDidSelect(_ solarDay: Int, _ solarMonth: Int, _ solarYear: Int, _ lunarDay: Int, _ lunarMonth: Int, _ lunarYear: Int)
     func monthAndYearIsShowing(_ month: Int, _ year: Int)
     func numberOfRowInCalendarView(_ row: Int)
 }
@@ -156,7 +156,7 @@ extension VNLunarCalendarView {
         for i in 0 ..< slides.count {
             slides[i].frame = CGRect(x: self.scrollView.frame.width * CGFloat(i), y: 0, width: self.scrollView.frame.width, height: self.scrollView.frame.height)
             slides[i].dateSelect = { [weak self] date in
-                self?.delegate?.dateDidSelect(date)
+                self?.delegate?.dateDidSelect(date.solarDay, date.solarMonth, date.solarYear, date.lunarDay, date.lunarMonth, date.lunarYear)
             }
             scrollView.addSubview(slides[i])
         }

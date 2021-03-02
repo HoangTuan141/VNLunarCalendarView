@@ -22,9 +22,8 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: VNLunarCalendarViewDelegate {
-    func dateDidSelect(_ date: SolarAndLunarDate) {
-        print("Date did select is: \(date)")
-        lunarCalendarView.setCurrentlySelectedDate(date.solarDay, date.solarMonth, date.solarYear)
+    func dateDidSelect(_ solarDay: Int, _ solarMonth: Int, _ solarYear: Int, _ lunarDay: Int, _ lunarMonth: Int, _ lunarYear: Int) {
+        lunarCalendarView.setCurrentlySelectedDate(solarDay, solarMonth, solarYear)
     }
     
     func monthAndYearIsShowing(_ month: Int, _ year: Int) {
