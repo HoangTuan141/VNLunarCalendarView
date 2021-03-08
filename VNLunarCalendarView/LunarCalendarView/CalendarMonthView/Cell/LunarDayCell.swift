@@ -11,11 +11,9 @@ import UIKit
 class LunarDayCell: UICollectionViewCell {
     @IBOutlet private weak var solarDayLabel: UILabel!
     @IBOutlet private weak var lunarDayLabel: UILabel!
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        setBorder(width: 0.5, color: #colorLiteral(red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1))
     }
     
     func setBorder(width: CGFloat, color: CGColor) {
@@ -23,12 +21,19 @@ class LunarDayCell: UICollectionViewCell {
         self.contentView.layer.borderColor = color
     }
     
-    func setupCell(day: SolarAndLunarDate) {
+    func setBackgroundColor(color: UIColor) {
+        self.contentView.backgroundColor = color
+    }
+    
+    func setupCell(day: SolarAndLunarDate, textSolarDayOfCurrentMonthColor: UIColor, textLunarDayOfCurrentMonthColor: UIColor, textSolarDayNotInCurrentMonthColor: UIColor, textLunarDayNotInCurrentMonthColor: UIColor) {
         solarDayLabel.text = "\(day.solarDay)"
         lunarDayLabel.text = "\(day.lunarDay)"
+        solarDayLabel.textColor = textSolarDayOfCurrentMonthColor
+        lunarDayLabel.textColor = textLunarDayOfCurrentMonthColor
+        
         if !day.isDayOfMonth {
-            solarDayLabel.textColor = #colorLiteral(red: 0.7960784314, green: 0.7960784314, blue: 0.7960784314, alpha: 1)
-            lunarDayLabel.textColor = #colorLiteral(red: 1, green: 0.8078431373, blue: 0.6274509804, alpha: 1)
+            solarDayLabel.textColor = textSolarDayNotInCurrentMonthColor
+            lunarDayLabel.textColor = textLunarDayNotInCurrentMonthColor
         }
         
         if day.lunarDay == 1 {

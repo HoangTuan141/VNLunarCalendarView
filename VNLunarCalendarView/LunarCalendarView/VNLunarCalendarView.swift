@@ -52,7 +52,17 @@ open class VNLunarCalendarView: UIView {
     
     var currentIndex = 1
     var slides = [LunarMonthView]()
-    
+    var backgroundCurrentDay = #colorLiteral(red: 0.9843137255, green: 0.8745098039, blue: 0.7647058824, alpha: 1)
+    var backgroundDateSelectedColor = UIColor.clear
+    var borderColorDay = UIColor.clear
+    var borderWidthDay: CGFloat = 0
+    var borderColorDaySelected = UIColor.clear
+    var borderWidthDaySelected: CGFloat = 0
+    var heightOfDayView: CGFloat = 50
+    var textSolarDayOfCurrentMonthColor = UIColor.black
+    var textLunarDayOfCurrentMonthColor = #colorLiteral(red: 0.9803921569, green: 0.5725490196, blue: 0.2, alpha: 1)
+    var textSolarDayNotInCurrentMonthColor = #colorLiteral(red: 0.7960784314, green: 0.7960784314, blue: 0.7960784314, alpha: 1)
+    var textLunarDayNotInCurrentMonthColor = #colorLiteral(red: 1, green: 0.8078431373, blue: 0.6274509804, alpha: 1)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -106,6 +116,45 @@ extension VNLunarCalendarView {
             weekdayLabel[i].text = weekdayTitle[i]
         }
     }
+    
+    public func setWeekdayTitleColor(color: UIColor) {
+        for i in weekdayLabel{
+            i.textColor = color
+        }
+    }
+    
+    public func setBackgroundColor(_ color: UIColor) {
+        self.contentView.backgroundColor = color
+    }
+    
+    public func setBackgroundCurrentDay(_ color: UIColor) {
+        self.backgroundCurrentDay = color
+    }
+    
+    public func setBackgroundDateSelectedColor(_ color: UIColor) {
+        self.backgroundDateSelectedColor = color
+    }
+    
+    public func setBorderColorDay(color: UIColor, borderWidth: CGFloat) {
+        self.borderColorDay = color
+        self.borderWidthDay = borderWidth
+    }
+    
+    public func setBorderColorDaySelected(color: UIColor, borderWidth: CGFloat) {
+        self.borderColorDaySelected = color
+        self.borderWidthDaySelected = borderWidth
+    }
+    
+    public func setHeightOfDayView(height: CGFloat) {
+        self.heightOfDayView = height
+    }
+    
+    public func setTextDayColor(textSolarDayOfCurrentMonthColor: UIColor, textLunarDayOfCurrentMonthColor: UIColor, textSolarDayNotInCurrentMonthColor: UIColor, textLunarDayNotInCurrentMonthColor: UIColor) {
+        self.textSolarDayOfCurrentMonthColor = textSolarDayOfCurrentMonthColor
+        self.textLunarDayOfCurrentMonthColor = textLunarDayOfCurrentMonthColor
+        self.textSolarDayNotInCurrentMonthColor = textSolarDayNotInCurrentMonthColor
+        self.textLunarDayNotInCurrentMonthColor = textLunarDayNotInCurrentMonthColor
+    }
 }
 
 // MARK: - ScrollView Delegate
@@ -138,6 +187,18 @@ extension VNLunarCalendarView {
         for i in 0 ... 2 {
             let slide = LunarMonthView()
             slide.listDay = listMonth[i]
+            slide.backgroundCurrentDay = self.backgroundCurrentDay
+            slide.backgroundDateSelectedColor = self.backgroundDateSelectedColor
+            slide.borderColorDay = self.borderColorDay
+            slide.borderWidthDay = self.borderWidthDay
+            slide.borderColorDaySelected = self.borderColorDaySelected
+            slide.borderWidthDaySelected = self.borderWidthDaySelected
+            slide.height = self.heightOfDayView
+            slide.textSolarDayOfCurrentMonthColor = self.textSolarDayOfCurrentMonthColor
+            slide.textLunarDayOfCurrentMonthColor = self.textLunarDayOfCurrentMonthColor
+            slide.textSolarDayNotInCurrentMonthColor = self.textSolarDayNotInCurrentMonthColor
+            slide.textLunarDayNotInCurrentMonthColor = self.textLunarDayNotInCurrentMonthColor
+            
             if let date = self.currentlySelectedDate {
                 slide.dateSelected = date
             }

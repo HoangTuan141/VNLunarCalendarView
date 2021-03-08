@@ -16,6 +16,14 @@ class ViewController: UIViewController {
         lunarCalendarView.delegate = self
         lunarCalendarView.setCurrentMonth(month: 2, year: 2021)
         lunarCalendarView.setWeekdayTitle(weekdayTitle: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"])
+        lunarCalendarView.setBackgroundColor(.red)
+        lunarCalendarView.setBackgroundCurrentDay(.blue)
+        lunarCalendarView.setBackgroundDateSelectedColor(.yellow)
+        lunarCalendarView.setBorderColorDay(color: .gray, borderWidth: 0.5)
+        lunarCalendarView.setBorderColorDaySelected(color: .orange, borderWidth: 5)
+        lunarCalendarView.setHeightOfDayView(height: 50)
+        lunarCalendarView.setWeekdayTitleColor(color: .black)
+        lunarCalendarView.setTextDayColor(textSolarDayOfCurrentMonthColor: .black, textLunarDayOfCurrentMonthColor: .gray, textSolarDayNotInCurrentMonthColor: .green, textLunarDayNotInCurrentMonthColor: .blue)
     }
 
 
