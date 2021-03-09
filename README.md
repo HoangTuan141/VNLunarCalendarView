@@ -1,5 +1,7 @@
 # VNLunarCalendarView
 Library reference algorithm for lunar and solar days of author Ho Ngoc Duc
+## Demo
+![GIF_Animation](https://user-images.githubusercontent.com/54350677/110410595-b6db5800-80bb-11eb-8022-933f40bfb11a.GIF)
 ## Installation
 ### CocoaPods
 With CocoaPods you can simply add `VNLunarCalendarView` in your Podfile:<br/>
