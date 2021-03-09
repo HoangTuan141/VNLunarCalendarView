@@ -94,20 +94,21 @@ extension LunarMonthView: UICollectionViewDelegate, UICollectionViewDataSource, 
             cell.contentView.backgroundColor = backgroundCurrentDay
         }
         
+        cell.setBorder(width: borderWidthDay, color: borderColorDay.cgColor)
+        
         if let dateSelected = self.dateSelected {
             if listDay[indexPath.row] == dateSelected {
                 cell.setBorder(width: borderWidthDaySelected, color: borderColorDaySelected.cgColor)
+                cell.setBackgroundColor(color: self.backgroundDateSelectedColor)
             }
         }
-        
-        cell.setBorder(width: borderWidthDay, color: borderColorDay.cgColor)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (collectionView.frame.width / 7)
-        return CGSize(width: width, height: 50)
+        return CGSize(width: width, height: self.height)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
